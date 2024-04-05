@@ -11,4 +11,9 @@ public class HelloApi {
     public String hello(@RequestParam(name = "name") String name) {
         return "Hello, " + name + "!!!";
     }
+
+    @GetMapping
+    public String bye() {
+        return "Bye!!!";
+    }
 }
