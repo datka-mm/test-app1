@@ -12,7 +12,7 @@ public class HelloApi {
         return "Hello, " + name + "!!!";
     }
 
-    @GetMapping
+    @GetMapping("/api/test/bye")
     public String bye() {
         return "Bye!!!";
     }
