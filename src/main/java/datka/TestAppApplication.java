@@ -16,7 +16,7 @@ public class TestAppApplication {
     }
     @GetMapping("/api/test/hello")
     public String hello(@RequestParam(required = false, defaultValue = "Datka") String name) {
-        return "Hello, %s!!!".formatted(name);
+        return "Hello, " + name + "!!!";
     }
 
 
